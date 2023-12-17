@@ -61,7 +61,7 @@ class TestAllocate {
 
         var line = new OrderLine("order1", new Sku("SMALL-FORK"), new Quantity(10));
 
-        assertThrows(OutOfStockException.class, () -> allocate(line, Set.of(batch)), "Out of stock for sku SMALL-FORK");
+        assertThrows(OutOfStockException.class, () -> allocate(line, Set.of(batch)), "Out of stock for value SMALL-FORK");
 
         allocate(new OrderLine("order2", new Sku("SMALL-FORK"), new Quantity(1)), Set.of(batch));
     }

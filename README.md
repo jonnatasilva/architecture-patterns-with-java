@@ -29,7 +29,17 @@ Based on the book architecture-patterns-with-python
    5. Exceptions can express domain concepts too
    6. Domain services are not the same thing as the services from the service layer. Although they are often closed related. A domain service represents a business concept or process, whereas a service-layer service represents a use case for you application. Often the service layer will call a domain service.
 2. Repository, Service Layer, and Unit of Work patterns
+   1. Building fakes your abstractions is an excellent way to get design feedback. if it's hard to fake, the abstraction is probably too complicated
+   2. Ports and adapters came out of the OO word, and the definition we hold onto is that the port is the interface between our application and whatever it is we wish to abstract away, and the adapter is the implementation behind that interface or abstraction.
+   3. Apply dependency inversion to your ORM
+   4. Our domain model should be free of infrastructure concerns, so your ORM should import your model, and not the other way around.
+   5. Functional Core, Imperative shell
 3. Some thoughts about testing and abstractions
+   1. Designing for testability really means designing for extensibility,
+   2. Mock -> London-School TDD
+   3. Fake are working implementations of the thing they're replacing, but they're designed for use only in tests. They wouldn't work "in real life"; our in-memory repository is a good example. But you can use them to make assertions about the end state of a system rather than the behaviours along the way, so they're associated with classic-style TDD
+   4. Mocks Aren't Stubs
+   5. We can make our systems easier to test and maintain by simplifying the interface between our business logic and messy IO
 
 # Part II, Event-Driven Architecture
 1. Event-driven architecture

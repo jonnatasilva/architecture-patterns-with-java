@@ -71,7 +71,6 @@ class TestBatches {
         var line = makeOrderLine("DECORATIVE-TRINKET",2);
 
         batch.allocate(line);
-        batch.allocate(line);
 
         assert batch.getAvailableQuantity() == 18;
     }

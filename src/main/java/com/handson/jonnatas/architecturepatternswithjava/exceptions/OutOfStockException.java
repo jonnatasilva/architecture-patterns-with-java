@@ -7,6 +7,6 @@ import lombok.Getter;
 public class OutOfStockException extends RuntimeException {
 
     public OutOfStockException(Sku sku) {
-        super("Out of stock for sku" + sku.value());
+        super("Out of stock for value" + sku.value());
     }
 }
