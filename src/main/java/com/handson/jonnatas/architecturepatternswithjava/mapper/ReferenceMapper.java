@@ -1,6 +1,6 @@
 package com.handson.jonnatas.architecturepatternswithjava.mapper;
 
-import com.handson.jonnatas.architecturepatternswithjava.Reference;
+import com.handson.jonnatas.architecturepatternswithjava.domain.Reference;
 import org.mapstruct.Mapper;
 
 @Mapper

@@ -1,14 +1,15 @@
-package com.handson.jonnatas.architecturepatternswithjava.database.repository.impl;
+package com.handson.jonnatas.architecturepatternswithjava.adapters.repository.impl;
 
-import com.handson.jonnatas.architecturepatternswithjava.Batch;
-import com.handson.jonnatas.architecturepatternswithjava.Reference;
-import com.handson.jonnatas.architecturepatternswithjava.database.mapper.BatchMapper;
-import com.handson.jonnatas.architecturepatternswithjava.database.repository.RepositoryFacade;
+import com.handson.jonnatas.architecturepatternswithjava.domain.Batch;
+import com.handson.jonnatas.architecturepatternswithjava.domain.Reference;
+import com.handson.jonnatas.architecturepatternswithjava.adapters.mapper.BatchMapper;
+import com.handson.jonnatas.architecturepatternswithjava.adapters.repository.RepositoryFacade;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
 import java.util.Optional;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @Component
 @RequiredArgsConstructor
@@ -27,10 +28,10 @@ class RepositoryFacadeImpl implements RepositoryFacade {
     }
 
     @Override
-    public List<Batch> findAll() {
+    public Set<Batch> findAll() {
         return batchRepository.findAll().stream()
                 .map(BatchMapper.INSTANCE::map)
-                .toList();
+                .collect(Collectors.toSet());
     }
 
     @Override

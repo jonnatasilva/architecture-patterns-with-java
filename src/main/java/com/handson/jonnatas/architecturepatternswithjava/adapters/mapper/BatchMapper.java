@@ -1,7 +1,7 @@
-package com.handson.jonnatas.architecturepatternswithjava.database.mapper;
+package com.handson.jonnatas.architecturepatternswithjava.adapters.mapper;
 
-import com.handson.jonnatas.architecturepatternswithjava.Batch;
-import com.handson.jonnatas.architecturepatternswithjava.database.orm.BatchORM;
+import com.handson.jonnatas.architecturepatternswithjava.domain.Batch;
+import com.handson.jonnatas.architecturepatternswithjava.adapters.orm.BatchORM;
 import com.handson.jonnatas.architecturepatternswithjava.mapper.QuantityMapper;
 import com.handson.jonnatas.architecturepatternswithjava.mapper.ReferenceMapper;
 import com.handson.jonnatas.architecturepatternswithjava.mapper.SkuMapper;

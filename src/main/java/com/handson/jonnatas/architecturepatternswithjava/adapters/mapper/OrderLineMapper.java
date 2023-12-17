@@ -1,7 +1,7 @@
-package com.handson.jonnatas.architecturepatternswithjava.database.mapper;
+package com.handson.jonnatas.architecturepatternswithjava.adapters.mapper;
 
-import com.handson.jonnatas.architecturepatternswithjava.OrderLine;
-import com.handson.jonnatas.architecturepatternswithjava.database.orm.OrderLineORM;
+import com.handson.jonnatas.architecturepatternswithjava.domain.OrderLine;
+import com.handson.jonnatas.architecturepatternswithjava.adapters.orm.OrderLineORM;
 import com.handson.jonnatas.architecturepatternswithjava.mapper.QuantityMapper;
 import com.handson.jonnatas.architecturepatternswithjava.mapper.SkuMapper;
 import org.mapstruct.Mapper;

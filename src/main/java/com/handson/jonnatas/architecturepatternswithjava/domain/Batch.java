@@ -1,4 +1,4 @@
-package com.handson.jonnatas.architecturepatternswithjava;
+package com.handson.jonnatas.architecturepatternswithjava.domain;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

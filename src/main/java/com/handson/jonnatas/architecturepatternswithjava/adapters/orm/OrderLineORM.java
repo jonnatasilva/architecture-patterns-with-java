@@ -1,4 +1,4 @@
-package com.handson.jonnatas.architecturepatternswithjava.database.orm;
+package com.handson.jonnatas.architecturepatternswithjava.adapters.orm;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

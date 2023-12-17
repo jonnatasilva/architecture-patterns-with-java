@@ -1,6 +1,6 @@
 package com.handson.jonnatas.architecturepatternswithjava.mapper;
 
-import com.handson.jonnatas.architecturepatternswithjava.Quantity;
+import com.handson.jonnatas.architecturepatternswithjava.domain.Quantity;
 import org.mapstruct.Mapper;
 
 @Mapper

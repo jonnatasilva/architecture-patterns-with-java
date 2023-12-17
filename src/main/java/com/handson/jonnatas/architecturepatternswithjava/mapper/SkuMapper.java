@@ -1,6 +1,6 @@
 package com.handson.jonnatas.architecturepatternswithjava.mapper;
 
-import com.handson.jonnatas.architecturepatternswithjava.Sku;
+import com.handson.jonnatas.architecturepatternswithjava.domain.Sku;
 import org.mapstruct.Mapper;
 
 @Mapper

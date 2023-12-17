@@ -1,12 +1,24 @@
 package com.handson.jonnatas.architecturepatternswithjava;
 
-import com.handson.jonnatas.architecturepatternswithjava.database.repository.RepositoryFacade;
+import com.handson.jonnatas.architecturepatternswithjava.adapters.repository.RepositoryFacade;
+import com.handson.jonnatas.architecturepatternswithjava.domain.Batch;
+import com.handson.jonnatas.architecturepatternswithjava.domain.Reference;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Optional;
+import java.util.Set;
 
 public class FakeRepository implements RepositoryFacade {
 
-    private List<Batch> batches = new ArrayList<>();
+    private final Set<Batch> batches;
+
+    public FakeRepository() {
+        this.batches = new HashSet<>();
+    }
+
+    public FakeRepository(Set<Batch> batches) {
+        this.batches = new HashSet<>(batches);
+    }
 
     @Override
     public Batch save(Batch batch) {
@@ -16,7 +28,7 @@ public class FakeRepository implements RepositoryFacade {
     }
 
     @Override
-    public List<Batch> findAll() {
+    public Set<Batch> findAll() {
         return batches;
     }
 

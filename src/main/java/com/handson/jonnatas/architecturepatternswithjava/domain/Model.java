@@ -1,6 +1,6 @@
-package com.handson.jonnatas.architecturepatternswithjava;
+package com.handson.jonnatas.architecturepatternswithjava.domain;
 
-import com.handson.jonnatas.architecturepatternswithjava.exceptions.OutOfStockException;
+import com.handson.jonnatas.architecturepatternswithjava.domain.exceptions.OutOfStockException;
 
 import java.util.Set;
 

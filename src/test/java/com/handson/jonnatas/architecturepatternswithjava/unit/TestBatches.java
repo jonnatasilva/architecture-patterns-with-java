@@ -1,5 +1,6 @@
-package com.handson.jonnatas.architecturepatternswithjava;
+package com.handson.jonnatas.architecturepatternswithjava.unit;
 
+import com.handson.jonnatas.architecturepatternswithjava.domain.*;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;

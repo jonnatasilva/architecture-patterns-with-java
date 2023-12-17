@@ -1,8 +1,10 @@
-package com.handson.jonnatas.architecturepatternswithjava;
+package com.handson.jonnatas.architecturepatternswithjava.integration;
 
-import com.handson.jonnatas.architecturepatternswithjava.database.orm.BatchORM;
-import com.handson.jonnatas.architecturepatternswithjava.database.orm.OrderLineORM;
-import com.handson.jonnatas.architecturepatternswithjava.database.repository.RepositoryFacade;
+import com.handson.jonnatas.architecturepatternswithjava.*;
+import com.handson.jonnatas.architecturepatternswithjava.adapters.orm.BatchORM;
+import com.handson.jonnatas.architecturepatternswithjava.adapters.orm.OrderLineORM;
+import com.handson.jonnatas.architecturepatternswithjava.adapters.repository.RepositoryFacade;
+import com.handson.jonnatas.architecturepatternswithjava.domain.*;
 import jakarta.persistence.EntityManager;
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;

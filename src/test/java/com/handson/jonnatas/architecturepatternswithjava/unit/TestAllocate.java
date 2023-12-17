@@ -1,12 +1,13 @@
-package com.handson.jonnatas.architecturepatternswithjava;
+package com.handson.jonnatas.architecturepatternswithjava.unit;
 
-import com.handson.jonnatas.architecturepatternswithjava.exceptions.OutOfStockException;
+import com.handson.jonnatas.architecturepatternswithjava.domain.*;
+import com.handson.jonnatas.architecturepatternswithjava.domain.exceptions.OutOfStockException;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.util.Set;
 
-import static com.handson.jonnatas.architecturepatternswithjava.Model.allocate;
+import static com.handson.jonnatas.architecturepatternswithjava.domain.Model.allocate;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class TestAllocate {

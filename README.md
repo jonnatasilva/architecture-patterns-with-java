@@ -34,6 +34,14 @@ Based on the book architecture-patterns-with-python
    3. Apply dependency inversion to your ORM
    4. Our domain model should be free of infrastructure concerns, so your ORM should import your model, and not the other way around.
    5. Functional Core, Imperative shell
+   6. Service layer pattern to take care of orchestrating out workflows and defining the use cases of our system.
+   7. All the orchestration logic is in the user case/service layer, and the domain logic stays in the domain
+   8. Application service(our service layer). Its job is to handle requests from the outside world and to orchestrate an operation. What we mean is that the service layer drives the application by following a bunch of simple steps:
+      1. Get some data from the database
+      2. Update the domain model
+      3. Persist any changes
+   9. Domain service this is the name for a piece of logic that belongs in the domain model but doesn't sit naturally inside a stateful entity or value object.
+   10. For a more complex application, you might have one file per class, you might have helper parent classes  for Entity, ValueObject, and Aggregate, and you might add an exceptions for domain-layer exceptions and, as you'll see, commands and events
 3. Some thoughts about testing and abstractions
    1. Designing for testability really means designing for extensibility,
    2. Mock -> London-School TDD
